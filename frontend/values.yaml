@@ -1,0 +1,13 @@
+replicaCount: 2
+
+image:
+  repository: 975050024946.dkr.ecr.us-west-2.amazonaws.com/mern-frontend
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 3000
+
+resources: {}

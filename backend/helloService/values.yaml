@@ -1,0 +1,12 @@
+replicaCount: 2
+
+image:
+  repository: 975050024946.dkr.ecr.us-west-2.amazonaws.com/hello-service
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 3001
+
+resources: {}
